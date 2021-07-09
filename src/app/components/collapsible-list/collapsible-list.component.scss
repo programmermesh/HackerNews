@@ -1,0 +1,34 @@
+.comment-header {
+  font-weight: bold;
+}
+ul {
+  padding: 3px;
+  list-style: none;
+}
+.comment-text {
+  word-wrap: normal;
+  line-height: normal;
+  font-size: 12px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.comment-username {
+  font-size: 10.6667px;
+  font-family: Verdana, Geneva, sans-serif;
+  text-decoration: none;
+  color: #828282;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.toggle {
+  font-size: 10.6667px;
+  text-decoration: none;
+  color: #828282;
+}
+
+.votearrow {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+}

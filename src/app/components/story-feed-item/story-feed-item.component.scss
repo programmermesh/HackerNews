@@ -1,0 +1,30 @@
+.feed-item-username,
+.feed-item-comments-count {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.votearrow {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+}
+
+.domainName {
+  font-size: 10.6667px;
+  color: #828282;
+}
+
+small {
+  font-size: 9.3333px;
+  color: #828282;
+}
+
+:host {
+  margin-left: -40px;
+}

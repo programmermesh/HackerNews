@@ -1,0 +1,14 @@
+$ghost-white: #f6f6ef;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+ng,
+body,
+html {
+  background-color: white;
+  font-family: "Verdana", "Geneva", sans-serif;
+  font-size: 13.3333px;
+}
+
+body {
+  overflow-y: scroll;
+}

@@ -1,0 +1,63 @@
+$light-grey: rgb(211, 211, 211);
+
+#spinner-hn {
+  height: 160px;
+  width: 160px;
+  background-image: url("../../../assets/spinner_HN.svg");
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#navigator {
+  height: 60px;
+  background-color: white;
+  text-align: center;
+  line-height: 60px;
+  position: sticky;
+  top: 60px;
+  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.75);
+  span {
+    &:nth-child(1) {
+      font-size: 1.825rem;
+      // font-weight: 600;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      font-size: 2.125rem;
+    }
+    &:nth-child(5) {
+      font-size: 1.825rem;
+      // font-weight: 600;
+    }
+  }
+}
+
+:host > ul {
+  max-width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  background-color: #f6f6ef;
+  > li {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+i {
+  vertical-align: center;
+}
+
+.votearrow {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  margin: 3px 2px 6px;
+  background-image: url("../../../assets/grayarrow2x.gif");
+}

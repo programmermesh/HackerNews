@@ -1,0 +1,27 @@
+<div id="story-item-detail-wrapper">
+  <div id="story-item-detail-header" *ngIf="feedItemFetched">
+    <div>
+      <img class="votearrow" src="../../../assets/grayarrow2x.gif" />
+      {{result.title}}
+      <small class="domainName" *ngIf="domain">({{domain}})</small>
+    </div>
+    
+    &nbsp;&nbsp;&nbsp;<small>{{result.score}} points by
+    <a class="feed-item-username" [routerLink]="['/user', by]" routerLinkActive="active">{{result.by}}</a> | {{time}} |
+    <a class="feed-item-comments-count" routerLinkActive="active">{{commentsCount}} comments</a>
+  </small><br><br>
+  <form>
+    <textarea id="comment" name="comment" rows="4" cols="50">
+      </textarea>
+      <br><br>
+      <input type="submit" value="add comment">
+    </form><br>
+  <div id="story-item-detail-content">
+    <ul>
+      <li *ngFor="let comment of kids; let i = index;">
+        <app-collapsible-list [level]="0" [id]="comment" (hasBeenDeleted)="onDeleted($event)">
+        </app-collapsible-list>
+      </li>
+    </ul>
+  </div>
+</div>

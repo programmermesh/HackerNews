@@ -1,0 +1,55 @@
+.feed-item-username,
+.feed-item-comments-count {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+#story-item-detail-wrapper > * {
+  max-width: 1560px;
+  margin-top: -5px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f6ef;
+}
+
+#story-item-detail-header {
+  min-height: 80px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#story-item-details {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.votearrow {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+}
+
+.title {
+  font-size: 13.3333px;
+  text-decoration: none;
+}
+
+.domainName {
+  font-size: 10.6667px;
+  color: #828282;
+}
+
+small {
+  font-size: 9.3333px;
+  color: #828282;
+}

@@ -1,0 +1,9 @@
+<div id="spinner-hn" *ngIf="grabbingFeed"></div>
+  <ul *ngIf="!grabbingFeed">
+    <li *ngFor="let item of feed; let i = index;">
+      <app-story-feed-item [index]="page+i" [id]="item.id" [title]="item.title" [url]="item.url" [score]="item.score" [by]="item.by"
+        [time]="item.time" [commentsCount]="item.kids ? item.kids.length : 0"></app-story-feed-item>
+    </li>
+    <app-footer></app-footer>
+  </ul>
+  

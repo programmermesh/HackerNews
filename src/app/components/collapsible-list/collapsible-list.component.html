@@ -1,0 +1,24 @@
+<ul>
+  <div>
+    <div class="comment-header" *ngIf="hasCommentTree">
+      <img  *ngIf="(isActivated && !!kids && !!kids.length)" class="votearrow" src="../../../assets/grayarrow2x.gif" />
+      <span class="comment-username" [routerLink]="['/user', by]">{{by}}</span>&nbsp;<span class="comment-username" >{{time}}</span>
+      <span *ngIf="(!isActivated && !!kids && !!kids.length)" (click)="toggleActivate()">
+        <span class="toggle">[<i class="toggle"></i>{{commentsCount}} more]</span>
+      </span>
+      <span *ngIf="(isActivated && !!kids && !!kids.length)" 
+      (click)="toggleActivate()">
+      <span class="toggle">
+        [<i class="fas fa-minus fa-xs toggle"></i>]
+      </span>
+      </span>
+    </div>
+    <pre class="comment-text" [innerHTML]="text"></pre>
+  </div>
+  <ng-container *ngIf="isActivated">
+    <li *ngFor="let comment of kids; let i = index;">
+      <app-collapsible-list [level]="level" [id]="comment" (hasBeenDeleted)="onDeleted($event)">
+      </app-collapsible-list>
+    </li>
+  </ng-container>
+</ul>
